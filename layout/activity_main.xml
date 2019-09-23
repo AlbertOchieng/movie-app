@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/deadpool"
+    tools:context="com.example.albertzkiki.movieapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/black" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/slogan"
+            android:text="@string/slogan"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textColor="@color/letsmake"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/doubletap"
+            android:text="@string/doubletap"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textColor="@color/letsmake"
+            android:textStyle="bold"
+
+            />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/btnNotUser"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconarrow"
+            app:cb_color="@color/btnsignUp"
+            app:cb_pressedRingWidth="8dp"
+            android:onClick="didTapButton"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:id="@+id/btnSignUp"
+            fancy:fb_text="Sign Up"
+            fancy:fb_defaultColor="#a70606"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_radius="5dp"
+            >
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:id="@+id/btnSignIn"
+            fancy:fb_text="Sign In"
+            fancy:fb_defaultColor="#a70606"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_radius="5dp"
+            >
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

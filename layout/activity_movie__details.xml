@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.albertzkiki.movieapp.Movie_Details">
+
+
+
+    <android.support.design.widget.AppBarLayout
+
+        android:id="@+id/app_bar_layout_MD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/collapsing_toolbar_MD"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="#0e0d0e"
+            app:expandedTitleTextAppearance="@android:color/black"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/movie_imgMD"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                />
+
+             <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Movie Name"
+                android:id="@+id/toolbarMD"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="parallax"
+
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rate"
+        android:id="@+id/btnRating"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/app_bar_layout_MD"
+        app:layout_anchorGravity="bottom|right|end"
+        app:backgroundTint="@android:color/white"
+        app:useCompatPadding="true"
+        app:borderWidth="0dp"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScrollViewMD"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Movie Name"
+                        android:padding="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/movie_nameCV"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout_priceMD"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_money"
+                            android:padding="12dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="500"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/movie_priceMD"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_weight="9"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:textAlignment="center"
+                        android:id="@+id/btnbook"
+                        fancy:fb_text="Book Now"
+                        fancy:fb_textGravity="center"
+                        fancy:fb_defaultColor="#a70606"
+                        fancy:fb_borderWidth="1dp"
+                        fancy:fb_radius="5dp"
+                        >
+                    </mehdi.sakout.fancybuttons.FancyButton>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linearlayoutRating"
+                        >
+
+                        <TextView
+                            android:id="@+id/rateUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="@dimen/layout_margin_left"
+                            android:layout_marginTop="@dimen/layout_margin_top"
+                            android:padding="@dimen/padding_layout"
+                            android:text="Rate the Movie"
+                            android:textSize="20sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/linearlayoutRating"
+                            tools:layout_constraintLeft_creator="1"
+                            tools:layout_constraintTop_creator="1" />
+
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:rating="0"
+                            android:max="5"
+                             />
+
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="@dimen/layout_margin_left"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:padding="@dimen/padding_layout"
+                        android:text="@string/plot"
+                        android:textSize="20sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linearlayoutRating"
+                        tools:layout_constraintLeft_creator="1"
+                        tools:layout_constraintTop_creator="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/plotsynopsis"
+                        android:layout_marginLeft="@dimen/layout_margin_left"
+                        android:padding="@dimen/padding_layout"
+                        android:textSize="20sp"
+                        android:text="@string/myPass"
+                        app:layout_constraintTop_toBottomOf="@+id/title"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:layout_constraintTop_creator="1"
+                        app:layout_goneMarginBottom="@dimen/layout_margin_top"
+
+                        />
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

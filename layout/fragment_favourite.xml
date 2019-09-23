@@ -1,0 +1,22 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layoutFav"
+    android:background="@drawable/deadpool"
+    tools:context="com.example.albertzkiki.movieapp.FavouriteFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerFavourite"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <com.libRG.CustomTextView
+            android:id="@+id/movieNameBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="MovieName"
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_moviehub"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_moviehub"
+
+            />
+
+        <com.libRG.CustomTextView
+            android:id="@+id/DateBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Date"
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_calender"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_calender"
+
+            />
+        <com.libRG.CustomTextView
+            android:id="@+id/TimeBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Time"
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_time"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_time"
+
+            />
+
+        <com.libRG.CustomTextView
+            android:id="@+id/phoneNumberBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Phone: "
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_profile"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_profile"
+
+            />
+        <com.libRG.CustomTextView
+            android:id="@+id/seatsBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="SeatNumber"
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_seat"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_seat"
+
+            />
+
+        <com.libRG.CustomTextView
+            android:id="@+id/AmountBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Amount "
+            android:textColor="@color/transparentBlack"
+            android:visibility="visible"
+            app:lib_checkMarkTint="@color/transparentBlack"
+            app:lib_checkedDrawable="@drawable/ic_money"
+            app:lib_checkedIconPosition="left"
+            app:lib_setChecked="true"
+            app:lib_setCheckedText="true"
+            app:lib_setFont="@string/DroidSansBold"
+            app:lib_setRadius="3dp"
+            app:lib_setRoundedBorderColor="@color/colorPrimary"
+            app:lib_setRoundedView="true"
+            app:lib_unCheckedDrawable="@drawable/ic_money"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

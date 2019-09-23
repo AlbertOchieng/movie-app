@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/deadpool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.albertzkiki.movieapp.signup">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerInParent="true"
+                >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regphnnumber"
+            android:hint="@string/phnHint"
+            android:textColorHint="@color/red"
+            android:text="@string/myphon"
+            android:inputType="phone"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-smallcaps"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_regusername"
+        android:hint="@string/userHint"
+        android:textColorHint="@color/red"
+        android:text="@string/myUser"
+        android:inputType="text"
+        android:textSize="25dp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="@color/white"
+        app:met_singleLineEllipsis="true"
+        />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regEmail"
+            android:hint="@string/emailHint"
+            android:textColorHint="@color/red"
+            android:text="@string/myEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="25dp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regpassword"
+            android:hint="@string/passHint"
+            android:textColorHint="@color/red"
+            android:text="@string/myPass"
+            android:inputType="numberPassword"
+            android:textSize="25dp"
+            android:fontFamily="monospace"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regCpassword"
+            android:hint="@string/CpassHint"
+            android:textColorHint="@color/red"
+            android:text="@string/myPass"
+            android:inputType="numberPassword"
+            android:textSize="25dp"
+            android:fontFamily="monospace"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+        </LinearLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:id="@+id/btnRegSignUp"
+            fancy:fb_text="Sign Up"
+            fancy:fb_defaultColor="#a70606"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_radius="5dp"
+            >
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+
+
+
+</RelativeLayout>
